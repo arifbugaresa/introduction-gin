@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import "introduction-gin/routers"
 
 func main() {
-	fmt.Print("Init Project")
+	var PORT = ":8080"
+
+	routers.StartServer().Run(PORT)
 }
